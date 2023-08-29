@@ -2,9 +2,7 @@ nltk
 streamlit_lottie
 seaborn
 openai
-xgboost
 pandas
 plotly
-pickle
 re
 
