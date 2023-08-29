@@ -1,9 +1,12 @@
 import streamlit as st
 import pickle
 import re
-#from nltk.tokenize import word_tokenize, sent_tokenize
+
+from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords 
+import nltk
+nltk.download('stopwords')
 
 """
 import pandas as pd
