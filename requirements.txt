@@ -4,5 +4,4 @@ seaborn
 openai
 pandas
 plotly
-re
 
