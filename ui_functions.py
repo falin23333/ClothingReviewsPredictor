@@ -8,27 +8,6 @@ from nltk.corpus import stopwords
 import nltk
 nltk.download('stopwords')
 
-"""
-import pandas as pd
-from streamlit_lottie import st_lottie
-import seaborn as sns
-import matplotlib.pyplot as plt
-from PIL import Image
-import numpy as np
-import plotly.express as px
-import requests
-import ui_functions
-import nltk
-from nltk.stem import LancasterStemmer
-from nltk.stem.snowball import SnowballStemmer
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import GridSearchCV
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_extraction.text import CountVectorizer
-"""
 
 
 
