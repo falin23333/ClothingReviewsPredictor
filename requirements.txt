@@ -1,4 +1,4 @@
-nltk.tokenize 
+nltk
 streamlit_lottie
 seaborn
 openai
@@ -7,4 +7,4 @@ pandas
 plotly
 pickle
 re
-nltk
+
