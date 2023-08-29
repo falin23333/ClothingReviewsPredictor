@@ -5,12 +5,11 @@ import ui_functions
 import openai
 from streamlit_lottie import st_lottie
 
+import pickle
 
 
 
 
-API_KEY = "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"
-API_KEY = "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"
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
@@ -67,8 +66,9 @@ def main():
                     true_positions= "Random"
 
             if st.button(f":red[Generate a :green[{true_positions}]-stars⭐️ review with ChatGPT]"):
-                
-                openai.api_key = API_KEY # cargo mi api_key OpenAI
+                with open(f'models/api.pkl', 'rb') as f:
+                    openai.api_key = pickle.load(f)
+                 
                 content = f"Dame tu reseña en inglés nueva de {true_positions} estrellas de un vestido comprado, donde 1 es pésimo y 5 excelente, 70 palabras  "
                 messages =[{"role":"system","content":"Crea reseñas de ropa"}] # Pongo al bot en un contexto inicial
                 messages.append({"role":"user","content":content})                      
