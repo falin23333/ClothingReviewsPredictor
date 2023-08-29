@@ -1,11 +1,7 @@
 import streamlit as st
 import pickle
-import pickle
-from sklearn.metrics import mean_squared_error, r2_score,mean_absolute_error
-from sklearn.model_selection import learning_curve
-from sklearn.model_selection import train_test_split
 import re
-from nltk.tokenize import word_tokenize, sent_tokenize
+#from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords 
 
