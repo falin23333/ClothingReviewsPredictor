@@ -10,6 +10,7 @@ from streamlit_lottie import st_lottie
 
 
 API_KEY = "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"
+API_KEY = "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"
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
