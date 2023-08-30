@@ -17,9 +17,10 @@ stopwords_english = stopwords.words('english')
 
 
 def load_model_and_textinput():
-   
+    
     # Agregar un cuadro de texto
-    user_input = st.text_input(":green[Copy your review of ChatGPT here or write one yourself., press Enter:]")
+    user_input = st.text_area(":green[Copy your review of ChatGPT here or write one yourself., press CRT + Enter:]", height=200)
+   
 
     with open(f'models/Vectorizer.pkl', 'rb') as f:
         vectorizer = pickle.load(f)
@@ -36,9 +37,10 @@ def load_model_and_textinput():
         
         
         st.subheader(f":green[Predicted score:] :red[{predicted_score[0]}]⭐️")
+        
         #ui_functions.predict_Recommend_ind(preprocessed_review)
     
-
+    
 
 def clean_text(text):
     # Convertir todo el texto a minúsculas
