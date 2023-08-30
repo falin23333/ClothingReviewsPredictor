@@ -19,7 +19,7 @@ stopwords_english = stopwords.words('english')
 def load_model_and_textinput():
     
     # Agregar un cuadro de texto
-    user_input = st.text_area(":green[Copy your review of ChatGPT here or write one yourself, press CRT + Enter:]", height=200)
+    user_input = st.text_area(":green[Copy your review of ChatGPT here or write one yourself,  press CRT + Enter:]", height=200)
    
 
     with open(f'models/Vectorizer.pkl', 'rb') as f:
